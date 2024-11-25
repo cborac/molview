@@ -36,7 +36,7 @@ if [[ $1 == "fetch" ]]
 	# Download third party PHP
 	wget https://raw.githubusercontent.com/erusev/parsedown/master/Parsedown.php
 	mv Parsedown.php php/Parsedown.php
-
+	exit 0
 fi
 
 if [[ $1 != "render" ]]

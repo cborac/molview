@@ -8,12 +8,12 @@ ErrorDocument 404 /page.php?id=404
 ErrorDocument 500 /page.php?id=500
 
 # HTTPS redirection
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://molview.org/$1 [L,R=302]
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://molview.org/$1 [L,R=302]
 
 # WWW redirection
-RewriteCond %{HTTP_HOST} ^www.molview.org$ [NC]
-RewriteRule ^(.*)$ http://molview.org/$1 [L,R=302]
+# RewriteCond %{HTTP_HOST} ^www.molview.org$ [NC]
+# RewriteRule ^(.*)$ http://molview.org/$1 [L,R=302]
 
 # Markdown pages
 RewriteRule ^readme$ page.php?id=readme [L]
