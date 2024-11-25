@@ -210,6 +210,7 @@ var MolView = {
 
 		this.addAction("embed", "menu", true);
 		this.addAction("export_sketcher_png", "menu", true);
+		this.addAction("copy_sketcher_png", "menu", true);
 		this.addAction("export_model_png", "menu", true);
 		this.addAction("export_model", "menu", true);
 		this.addAction("data_infocard", "menu", true);

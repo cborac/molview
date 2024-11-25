@@ -53,6 +53,15 @@ var Actions = {
 		if(blob !== null) saveAs(blob, document.title + " (structural formula).png");
 	},
 
+	copy_sketcher_png: function()
+	{
+		var dataURL = Sketcher.toDataURL();
+		var blob = dataURItoBlob(dataURL);
+		console.log("Executing")
+		window.testBlob = blob
+		if(blob !== null) navigator.clipboard.write([new ClipboardItem({ "image/png": blob })])
+	},
+
 	export_model_png: function()
 	{
 		var dataURL = Model.getImageDataURL();
